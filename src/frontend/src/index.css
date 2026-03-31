@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=DM+Sans:wght@300;400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --radius: 0.5rem;
+
+    /* KPS Color Palette */
+    /* Warm beige #F3EAD7 */
+    --background: 0.94 0.025 80;
+    --foreground: 0.22 0.04 230;
+
+    /* Card: white-ish */
+    --card: 0.99 0.005 80;
+    --card-foreground: 0.22 0.04 230;
+
+    --popover: 0.99 0.005 80;
+    --popover-foreground: 0.22 0.04 230;
+
+    /* Deep navy #0E2E40 as primary */
+    --primary: 0.22 0.04 230;
+    --primary-foreground: 0.97 0.01 80;
+
+    /* Beige secondary */
+    --secondary: 0.91 0.03 80;
+    --secondary-foreground: 0.22 0.04 230;
+
+    --muted: 0.91 0.02 80;
+    --muted-foreground: 0.45 0.03 230;
+
+    /* Gold #C9A45A as accent */
+    --accent: 0.72 0.1 75;
+    --accent-foreground: 0.15 0.02 230;
+
+    --destructive: 0.577 0.245 27.325;
+    --destructive-foreground: 0.985 0 0;
+
+    --border: 0.87 0.03 80;
+    --input: 0.87 0.03 80;
+    --ring: 0.72 0.1 75;
+
+    --chart-1: 0.51 0.08 190;
+    --chart-2: 0.48 0.1 245;
+    --chart-3: 0.72 0.1 75;
+    --chart-4: 0.22 0.04 230;
+    --chart-5: 0.65 0.12 145;
+
+    --sidebar: 0.22 0.04 230;
+    --sidebar-foreground: 0.97 0.01 80;
+    --sidebar-primary: 0.72 0.1 75;
+    --sidebar-primary-foreground: 0.15 0.02 230;
+    --sidebar-accent: 0.28 0.05 230;
+    --sidebar-accent-foreground: 0.97 0.01 80;
+    --sidebar-border: 0.3 0.05 230;
+    --sidebar-ring: 0.72 0.1 75;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: "DM Sans", sans-serif;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: "Playfair Display", serif;
+  }
+}
